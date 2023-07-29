@@ -20,6 +20,9 @@ public:
             curr=curr->next;
             count++;
         }
+
+        // idea is that to calculate how many times to rotate the list . if k(number of times to
+        // rotate the list is > than the len of the list then we do k%len)
         k = k%count;
         k=count-k;
         curr->next=head;
